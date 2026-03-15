@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "useDefineForClassFields": true,
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@it-toolbox/core": ["./packages/core/index.ts"],
+      "@it-toolbox/types": ["./packages/types/tool.ts"],
+      "@core/index": ["./packages/core/index.ts"],
+      "@toolbox/types/tool": ["./packages/types/tool.ts"],
+      "@toolbox/types/api": ["./packages/types/api.ts"]
+    }
+  },
+  "include": ["src", "packages"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
